@@ -1,0 +1,1763 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><html>
+<head>
+<meta name="INTERSHOP" content="Powered by INTERSHOP 7"/>
+<title>Quote</title> 
+<style type="text/css">
+body,td,th {font-family: HP Simplified, Arial, Verdana, Helvetica, Sans-serif; font-size: 9pt;}
+td img.decoration {display: block;}
+tr.decoration img {display: block;}
+a {color: #003366; text-decoration: none;}
+a:active {color: #003366;}
+a:link {color: #003366;}
+a:visited {color: #660066;}
+a:hover {text-decoration: underline;}
+a.bold {font-weight: bold;}
+a.small {font-size: 9pt;}
+a.udrline {text-decoration: underline;}
+a.udrlinebold {font-weight: bold; text-decoration: underline;}
+a.udrlinesmall {text-decoration: underline; font-size: 9pt;}
+a.lftnavhdr {font-weight: bold;}
+a.lftnavhdr:visited {font-weight: bold; color: #003366;}
+h1 {font-size: 25px; font-weight: normal; margin-bottom: 2px; margin-top: 2px;}
+h2 {font-size: 12px; margin-bottom: 1px; margin-top: 1px; font-weight: normal;}
+h3 {font-size: 12px; margin-bottom: 1px; margin-top: 1px; font-weight: normal;}
+h4 {font-size: 12px; margin-bottom: 1px; margin-top: 1px; font-weight: normal;}
+h5 {font-size: 12px; margin-bottom: 1px; margin-top: 1px; font-weight: normal;}
+h6 {font-size: 12px; margin-bottom: 1px; margin-top: 1px; font-weight: normal;}
+.bold {font-weight: bold;}
+.small {font-size: 9pt;}
+.smallbold {font-size: 9pt; font-weight: bold;}
+.srchopt {color: #333333; font-size: 9pt;}
+.copyright {color: #666666; font-size: 9pt;}
+.themeheader {color:#ffffff; font-weight:bold; border: solid #000000; border-width: 0px 0px 0px 0px}
+.theme {background:#0096d6; none repeat scroll 0 0; border: 1px solid #000000;}
+.themeLeft {background:#FFFFFF; none repeat scroll 0 0; border: solid #000000; border-width: 0px 0px 0px 0px}
+/* Basket level styles */
+.basketTable {background-color: #F9FBFD; color: #000000; border: 1px solid #000000; border-collapse: collapse;}
+.basketTHCol {padding:2px; color:#ffffff; font-weight:bold; border: solid #000000; border-width: 1px 1px 1px 0px; vertical-align: top;}
+.basketRow_color_1 { background-color: #FFFFFF;}
+.basketRow_color_2{ background-color: #FFFFFF;}
+.basketRow_Invalid{ background-color: #E0AAB0;}
+.btoCol {vertical-align:center; padding:2px;}
+.btoColWithRow {vertical-align:center; padding:2px; border-top: 1px solid #000000;}
+.btoColWithRowLeft{vertical-align:center; padding:2px; border-top: 1px solid #000000; border-left: 1px solid #000000;}
+.btoColWithLeft{vertical-align:center; padding:2px; border-left: 1px solid #000000;}
+.btoColWithRight{vertical-align:center; padding:2px; border-right: 1px solid #000000;}
+.btoColWithRowRight{vertical-align:center; padding:2px; border-top: 1px solid #000000; border-right: 1px solid #000000;}
+.btoColWithRowBothTop{vertical-align:center; padding:2px; border-left: 1px solid #000000; border-right: 1px solid #000000;border-top: 1px solid #000000;} 
+.btoColWithRowBoth{vertical-align:center; padding:2px; border-left: 1px solid #000000; border-right: 1px solid #000000;}
+.sigBx {
+font-size: 9.0pt;
+font-family: HP Simplified, Arial;
+border-top: .5pt solid black;
+border-right: .5pt solid black;
+border-left: .5pt solid black;
+border-bottom: .5pt solid black;
+word-wrap: break-word;
+white-space: nowrap;
+height:30px;
+mso-number-format:"\@";
+}
+.sigBxHdrn{
+font-size: 9.0pt;
+font-family: HP Simplified, Arial;
+border-left: .5pt solid black;
+border-top: .5pt solid black;
+border-right: .5pt solid black;
+border-bottom: .5pt solid black;
+word-wrap: break-word;
+white-space: nowrap;
+height:30px;
+background-color:#0096d6; 
+color:white;
+text-align:center;
+mso-number-format:"\@";
+}
+.sigBxHdr {
+font-size: 9.0pt;
+font-family: HP Simplified, Arial;
+border-top: .5pt solid black;
+border-right: .5pt solid black;
+border-bottom: .5pt solid black;
+word-wrap: break-word;
+white-space: nowrap;
+height:30px;
+background-color:#0096d6; 
+color:white;
+text-align:center;
+mso-number-format:"\@";
+}
+.sigBxAln {
+font-size: 9.0pt;
+font-family: HP Simplified, Arial;
+border-left: .5pt solid black;
+border-bottom: .5pt solid black;
+border-right: .5pt solid black;
+word-wrap: break-word;
+white-space: nowrap;
+height:30px;
+text-align:right;
+mso-number-format:"\@";
+}
+.sigBxStmp {
+border-left: .5pt solid black; 
+border-right: .5pt solid black; 
+text-align:right;
+}
+.sigBxStmpCl {
+border-left: .5pt solid black; 
+border-right: .5pt solid black;
+}
+.sigBxStmpBtm {
+border-left: .5pt solid black; 
+border-bottom: .5pt solid black; 
+border-right: .5pt solid black;
+}
+.sigBxStmpBtm_1{
+border-bottom: .5pt solid black;
+}
+.sigBxStmpExtrBtm{
+border-bottom: .5pt solid black;
+border-right: .5pt solid black;
+}
+.sigRow {
+font-size: 9.0pt;
+font-family: HP Simplified, Arial;
+vertical-align:middle;
+}
+.sigColLeft {
+border-left: .5pt solid black;
+}
+.sigColRt {
+border-right: .5pt solid black;
+}
+</style>
+</head>
+<script>
+function openInfoWindow(theURL,winName,features)
+{
+newWindow = window.open(theURL,winName,features);
+newWindow.focus();
+}
+</script><body bgcolor="#ffffff" text="#000000" link="#003366" alink="#003366" vlink="#336699" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0"> 
+ 
+ 
+ 
+<table border="0" cellspacing="0" cellpadding="0" width="640">
+<tr>
+<td width="40" nowrap="true"><img src="https://secure.hp-ww.com/img/s.gif" width="40" height="10" alt=""></td>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" width="600">
+<tr><td colspan="3" height="10">&nbsp;</td></tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="600">
+<tr>
+<td></td>
+<td align="right"><img src="https:&#47;&#47;h10014.www1.hp.com&#47;hpweb&#47;experience&#47;img&#47;hp-logo-print.png" width="60" height="60" border="0" alt="HP.com home"><!-- TemplateName : hp_confidential.isml -->
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="right" class="small">HP confidential and proprietary information.<br>Do not share.</td>
+</tr>
+</table>
+<!-- end of hp_confidential.isml --></td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0"> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<tr>
+<td colspan="2"><h1>Quote</h1></td>
+</tr>
+<tr>
+<td width="180">&nbsp;</td>
+<td width="350">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="2" class="smallbold"><!-- name order check for AP -->Hewlett-Packard Quote for Anca Pascu</td>
+</tr><tr>
+<td colspan="2" class="small">This is an electronic copy of the quote created for you by Anca Pascu.</td> 
+</tr><tr><td colspan="2">&nbsp;</td></tr><table border="0" cellspacing="0" cellpadding="0" width="600" style="table-layout:fixed">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<tr> 
+<td valign="top">
+
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+
+	<tr class="theme">
+		<td class="themeLeft" width="10" height="20">&nbsp;</td>
+		<td width="590" align="left" class="themeheader">&nbsp;Quote information</td>
+	</tr>
+	<tr><td colspan="2" height="5"></td></tr>
+
+</table>
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+	
+		<tr>
+		    <td width="10">&nbsp;</td><td width="180" class="smallbold">Quote name:</td>
+			<td width="390">Z420 Special Offer with 2Gb Nvidia card</td>
+		</tr>
+		<tr>
+			<td width="10">&nbsp;</td><td width="180" class="smallbold">Quote number:</td>
+			<td width="390">
+			
+				37081029
+			</td>
+		</tr>
+		<tr>
+			
+	</td>
+		</tr>
+		
+		<tr>
+			<td width="10">&nbsp;</td><td width="180" class="smallbold">Quote creation date:</td>
+			<td width="390">10.02.14</td>
+		</tr>
+		
+		<tr>
+		
+		<tr>
+			<td width="10"> &nbsp;</td><td width="180">&nbsp;</td>
+			<td width="390">&nbsp;</td>
+		</tr>
+	
+</table>
+
+</td><td valign="top">
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+	
+		<tr class="theme"><td class="themeLeft" width="10" height="20">&nbsp;</td><td width="590" align="left" class="themeheader">
+		  						
+		    						Customer Information		
+								
+							</td>
+		</tr>
+		<tr><td colspan="2" height="5"></td></tr>
+	
+</table>
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+	<tr>
+	    <td width="10"> &nbsp;</td><td width="180" class="smallbold">Company name:</td>
+		<td width="390">The Robert Gordon Uni NDNA</td>
+	</tr>
+	
+		<tr>
+			<td width="10">&nbsp;</td><td width="180" class="smallbold">Account ID:</td>
+			<td width="390">The_Robert_Gordon_Uni_NDNA</td>
+		</tr>
+	
+	<tr>
+		<td width="10"> &nbsp;</td><td width="180" class="smallbold">First name:</td>
+		<td width="390">Anca</td>
+	</tr>
+	<tr>
+		<td width="10"> &nbsp;</td><td width="180" class="smallbold">Last name:</td>
+		<td width="390">Pascu</td>
+	</tr>
+	<tr>
+		<td> &nbsp;</td><td width="180" class="smallbold">Phone:</td>
+		<td width="390"></td>
+	</tr>
+	<tr>
+		<td> &nbsp;</td><td width="180" class="smallbold">Fax:</td>
+		<td width="390"></td>
+	</tr>
+	<tr>
+		<td width="10"> &nbsp;</td><td width="180" class="smallbold">E-mail address:</td>
+		<td width="390">rgun-robertgordonuni_catalog-team@b2bsite.hp.com </td>
+	</tr>
+	<tr>
+		<td width="10"> &nbsp;</td><td width="180">&nbsp;</td>
+		<td width="390">&nbsp;</td>
+	</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+	<tr class="theme"><td class="themeLeft" width="10" height="20">&nbsp;</td><td width="590" align="left" class="themeheader">&nbsp;E-mail notification</td></tr>
+	<tr><td colspan="2" height="5"></td></tr>
+</table> 
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+	<tr>
+		<td width="10"> &nbsp;</td><td width="180" valign="top" class="smallbold">E-mail address:&nbsp;</td>
+		<td width="390">
+			
+			
+				anca.pascu@hp.com<br>
+			
+		</td>
+	</tr>
+	
+	
+		
+	<tr>
+		<td width="10"> &nbsp;</td><td width="180">&nbsp;</td>
+		<td width="390">&nbsp;</td>
+	</tr>
+</table>
+
+</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top">
+
+
+	
+
+
+
+</td><td valign="top">&nbsp;</td></tr><tr>
+<td valign="top">
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+	<tr class="theme"><td class="themeLeft" width="10" height="20">&nbsp;</td><td width="590" align="left" class="themeheader">&nbsp;Shipping information</td></tr>
+	<tr><td colspan="2" height="5"></td></tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+
+
+<!-- template: inc/ep_address_email.isml for address type 2 -->
+<tr>
+<td width="10"> &nbsp;</td><td width="180" class="smallbold">Company name: </td>
+<td width="390">The Robert Gordon University&nbsp;</td>
+</tr><tr>
+<td width="10"> &nbsp;</td><td width="180" class="smallbold">Attention to: </td>
+<td width="390">Gavin Wilson&nbsp;</td>
+</tr><tr><td width="10"> &nbsp;</td><td width="180" class="smallbold">Address: </td><td width="390">IT Services&nbsp;</td>
+</tr>
+<tr><td width="10"> &nbsp;</td><td width="180" class="smallbold">Address 2: </td><td width="390">St Andrew Street&nbsp;</td>
+</tr><tr><td width="10"> &nbsp;</td><td width="180" class="smallbold">Address 3:</td><td width="390">&nbsp;</td>
+</tr><tr>
+<td width="10"> &nbsp;</td><td width="180" class="smallbold">ZIP&#47;Postal code:</td>
+<td width="390">AB25 1HG&nbsp;</td>
+</tr>
+<tr>
+<td width="10"> &nbsp;</td><td width="180" class="smallbold">City:</td>
+<td width="390">Aberdeen&nbsp;</td>
+</tr>
+<tr>
+<td width="10"> &nbsp;</td><td width="180" class="smallbold">State&#47;Province:</td>
+<td width="390">&nbsp;</td>
+</tr>
+<tr>
+<td width="10"> &nbsp;</td><td width="180" class="smallbold">Country:</td>
+<td>United Kingdom&nbsp;
+</td>
+</tr>
+<tr>
+<td width="10"> &nbsp;</td><td width="180" class="smallbold">Phone:</td>
+<td width="390">01224 262000&nbsp;</td>
+</tr>
+<tr>
+<td width="10"> &nbsp;</td><td width="180" class="smallbold">Fax:</td>
+<td width="390">01224 262767&nbsp;</td>
+</tr>
+<tr>
+<td width="10"> &nbsp;</td><td width="180" class="smallbold">E-mail address:</td>
+<td width="390">g.a.wilson1@rgu.ac.uk&nbsp;</td>
+</tr>
+
+
+		
+
+	
+
+	<tr>
+		<td width="10"> &nbsp;</td><td width="180" class="smallbold">Shipping instructions:</td>
+		<td width="390" align="left" style="word-wrap:break-word;">&nbsp;</td>
+	</tr>
+	
+
+
+	
+
+
+<tr>
+	<td width="10"> &nbsp;</td><td width="180">&nbsp;</td>
+	<td width="390">&nbsp;</td>
+</tr>
+</table>	
+
+</td>
+<td valign="top">
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+	
+	    
+
+
+</table>  
+
+
+
+
+
+
+</td>
+</tr> 
+<tr>
+<td valign="top">
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+ 
+ </table>   
+ 
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+
+	
+</table>
+
+</td>
+<td valign="top">&nbsp;</td>
+</tr><tr>
+<td valign="top">
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+
+ </table>
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+	
+ </table>
+ 
+
+<!-- Billing type and bill from state for India -->
+
+ 
+</td> 
+</tr>
+<tr>
+<td valign="top">
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+
+	
+
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+
+	
+ 
+</table>
+
+
+</td> 
+</tr> 
+<tr>
+<td valign="top">
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+
+</table> 
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="text">
+
+</table>
+
+</td> 
+</tr>
+<tr>
+<td colspan="2"><!-- TemplateName : email_basket_template.isml -->
+
+
+<!--It is basket template for email-->
+
+  
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+	<table width="600" cellpadding="0" cellspacing="0" border="0" class="basketTable">
+		<colgroup>						
+			<col> <!-- Product Number -->
+			
+			
+			<col> <!-- Qty -->
+				
+			<col> <!-- Unit Price -->
+			
+			
+						
+			<col> <!-- Total Price -->	
+			
+		</colgroup>	
+	<tbody>
+		<tr class="theme">
+			<td class="basketTHCol" align="left" nowrap="nowrap"><b>Product number</b></td>
+			
+			
+			<td class="basketTHCol" align="right" nowrap="nowrap"><b>Qty</b></td>
+			
+			<td class="basketTHCol" align="right" nowrap="nowrap"><b>Unit price<br>[GBP]</b></td>
+			
+			
+			
+			<td class="basketTHCol" align="right" nowrap="nowrap"><b>Total price<br>[GBP]</b></td>		
+			
+		</tr>	
+		
+		
+		
+		
+		
+		
+    	
+		
+		
+	 	
+			
+				
+					
+					
+				
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+	
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+<!--products outside bundles--> 
+ 
+<tr class="" bgcolor="#F9FBFD"> 
+<td class="btoColWithRow" align=left><b>D9E49AA#ABU</b></td> 
+<td class="btoColWithRowLeft">&nbsp;</td><td class="btoColWithRowLeft">&nbsp;</td><td class="btoColWithRowBothTop">&nbsp;</td>
+</tr> 
+<tr class="" bgcolor="#F9FBFD">
+<td class="btoCol" align="left"> 
+<!-- Superscript symbol added for March tier II Pricing BRD-->
+<b>HP EliteDisplay E221c 21.5-inch Webcam LED Backlit Monitor (ENERGY STAR)-United Kingdom - UK English localization</b> 
+<!-- RecyclingFee Superscript Condition : false_false_false --></td>
+<!-- products outside bundles --><td class="btoColWithLeft" align="right">2</td> 
+<td class="btoColWithRowBoth" align="right">144.85</td> 
+<td class="btoColWithRowBoth" align="right">289.70</td> 
+</tr> 
+ 
+<!-- intangeble mail Id for software selling --><!--processing UDFS--><!-- processUdfIterator.isml -->
+<!-- TemplateName : inc/email_udf_lineItemView.isml -->
+
+<!--This template has code to display UDF in basket-->
+
+<!-- UDF start SortedUDFFormDataIterator--><!-- UDF end -->
+<!-- end of TemplateName : inc/email_udf_lineItemView.isml --><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+				
+					
+					
+				
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+	
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+<!-- Configuration base product --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithRow" align="left"><b>Z420 Special Offer</b> 
+<!-- CQ6 Configuration base product --> 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Base Model ID: 17325774<br>&nbsp;&nbsp;&nbsp;&nbsp;Config ID: 17368912 
+</td><td class="btoColWithRowLeft" align="right">1</td><td class="btoColWithRowBothTop" align="right">2,059.43</td> 
+<td class="btoColWithRowBothTop" align="right">2,059.43</td></tr><!-- processUdfIterator.isml -->
+<!-- TemplateName : inc/email_udf_lineItemView.isml -->
+
+<!--This template has code to display UDF in basket-->
+
+<!-- UDF start SortedUDFFormDataIterator--><!-- UDF end -->
+<!-- end of TemplateName : inc/email_udf_lineItemView.isml --><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>LJ449AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP Z420 Workstation 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>QE243AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP Single Unit Packaging 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>QE159AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP Z420 600W 90 Efficient Chassis 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>QD971AV#ABU</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->Microsoft Windows 7 Professional Edition 64bit OS UK 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>B6S40AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->No Factory OS Recovery Media to restore Windows 7 OS 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>E3F34AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->Intel Xeon E5-1680v2 3.00Ghz 25MB 1866 8C CPU 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>E2S47AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->16GB DDR3-1866 ECC (2x8GB) Unbuffered RAM 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>C2J31AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->NVIDIA Quadro K2000 2GB DL-DVI(I)+DP+DP 1st No cables included Graphics 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>A3D20AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->256GB SATA 1st Solid State Drive 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>QE191AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->1TB 7200 RPM SATA 2nd Hard Drive 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>A8Z48AV#ABU</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP USB Keyboard 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>A8Z50AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP USB Optical Mouse 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>QE236AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->16X SuperMulti DVDRW SATA 1st ODD 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>B2L49AV#ABB</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP 3/3/3 Warranty EURO 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>A2H73AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP Serial Port Adapter Kit 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>B4Y03AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP Z420 Front Memory Duct 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>QD956AV#ABU</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP Z420 Country Kit 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>A7E48AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP Processor Air Cooling Kit 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>AY130AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP Packaging Tag SN+MAC1+MAC2+UUID SVC 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>AY128AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP Chassis Tagging SN+MAC1+UUID service 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>YT924AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP Chassis Tagging SN+MAC1+UUID Service 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>YT926AV</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->Pkging Tag SN+MAC1 2+UUID 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+		
+		
+    	
+		
+		
+	 	
+			
+		
+			
+				<!-- added for CR:4381 implementation -->
+				<!-- checkForPromoBundles.isml -->
+
+
+<!-- End of checkForPromoBundles.isml -->
+
+				<!-- TemplateName : inc/email_ep_basket.isml -->
+
+<!--This template has logic to display products in email basket--> 
+
+
+
+ 
+ 
+<!-- Superscript symbol added for March tier II Pricing BRD--> 
+ <!-- Configuration subitems --><tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left"><b>UE342E</b></td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithLeft">&nbsp;</td><td class="btoColWithRowBoth">&nbsp;</td>
+</tr>
+<tr class="" bgcolor="#DDDDDD">
+<td class="btoColWithLeft" align="left">
+<!-- RecyclingFee Superscript Condition : false_false_false -->HP 3 year Next Business Day Onsite plus Defective Media Retention Workstation Only Service 
+</td>
+<!-- Configuration subitems --><!-- Third Bracket Started --> 
+<td class="btoColWithLeft" align="right">[1</td><td class="btoColWithRowBoth" align="right"> ]
+</td>
+<!-- Unit Price --><td class="btoColWithRowBoth" align="right"></td> 
+</tr><!-- end of TemplateName : inc/email_ep_basket.isml -->
+			
+			
+			
+		
+		
+		<!-- logistical service products -->
+		
+			
+			
+			<!-- TemplateName : inc\email_ep_print_logisticalService.isml -->
+
+
+
+<tr class="basketRow_color_1"> 
+<td class="btoColWithRow" colspan="4.00" align="left"><b>Logistical services profile</b><br> 
+Default; Door &#47; dock delivery; HP std: mixed Euro and&#47;or Industry pallet; Delivery advice prior to delivery; Access constraints, special truck size is required; Delivery trucks require a tail lift and pallet lift; Any working day at any time</td> 
+</tr><!--  Powered by INTERSHOP  -->
+<!-- TemplateName : inc/email_displayLogisticalProducts.isml -->
+
+<!--It shows the logistical service product-->
+<!-- Logistical Services SKUs will be displayed --><!--<tr class="basketRow_color_1">
+<td colspan="7">&nbsp;</td>
+</tr>
+<tr class="basketRow_color_1">
+<td colspan="7">&nbsp;</td>
+</tr>--><!-- end of TemplateName : inc/email_displayLogisticalProducts.isml --><!-- End of TemplateName : inc\email_ep_print_logisticalService.isml-->
+		
+		<!-- end logistical service products -->
+		
+		
+		<!-- TemplateName : email_ep_displayPriceSection.isml -->
+
+
+
+<!-- TemplateName : inc/email_ep_displaySubtotal.isml -->
+
+<!--It displays the subtotal value in basket-->
+
+<tr class="basketRow_color_1">
+<td class="btoColWithRow" colspan="3" align="right"> 
+[GBP]&nbsp;Subtotal:&nbsp;
+</td>
+<td class="btoColWithRowBothTop" align="right">2,349.13</td></tr>
+<!-- end of TemplateName : inc/email_ep_displaySubtotal.isml --><!-- TemplateName : inc/email_ep_displayTotal.isml -->
+
+
+
+<tr class="basketRow_color_1"><td class="btoCol" align="right" colspan="3"> 
+<b>[GBP]&nbsp;Total:</b>&nbsp;
+</td>
+<td align="right" class="btoColWithRowBoth">
+<b>2,349.13</b>
+</td></tr>
+<!-- end of TemplateName : inc/email_ep_displayTotal.isml --><!-- TemplateName : inc/email_ep_displayTotalSecCurrency.isml --><!-- end of TemplateName : inc/email_ep_displayTotalSecCurrency.isml --><!-- end of TemplateName : email_ep_displayPriceSection.isml -->
+		
+		
+			
+			
+	</tbody>
+	</table>
+	<!-- TemplateName : inc/email_ep_priceingindicator_footnotes_for_emails -->
+
+<!--It displays the pricing indicator in basket-->
+
+<!-- ep_priceingindicator_footnotes_for_emails.isml -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0"> 
+ 
+</table><!-- end of TemplateName : inc/email_ep_priceingindicator_footnotes_for_emails -->
+
+
+<!-- end of TemplateName : email_basket_template.isml -->
+</td>
+</tr>
+</table>
+<table width="600" border="0" cellspacing="0" class="text" cellpadding="0">
+<tr>
+<td>  
+
+   
+ 
+<table cellpadding="0" cellspacing="0" border="0" class="text" width="600">
+	<tr>
+		<td colspan="4">&nbsp;</td>
+	</tr>
+
+		
+	
+	
+
+
+	
+		
+
+    
+
+	
+	
+
+
+	
+		<tr>
+			<td colspan="4">For configured products, trade bloc adjuster and exchange rate conversions are applied and rounded at the component level.  There may be slight differences in the total configuration local prices between two configs with the same US$ or Euro base price.&nbsp;</td>
+		</tr>
+	
+
+<!-- Payment terms -->
+	
+
+
+	
+
+
+	
+
+
+	
+		
+	
+
+
+	
+ 
+
+	
+
+
+	
+
+
+	
+
+<!-- Terms and conditions URL -->
+	
+
+<!-- Terms and conditions Text for non-AP -->
+	
+		
+
+	
+
+
+	
+
+
+		
+			
+				<tr>
+					<td colspan="4">Prices shall remain valid for 30 days unless otherwise stated in this quote or otherwise agreed in a framework agreement. Any time before the acceptance of this quote HP shall be entitled to revoke the quote or to replace it by submission of a new quote.</td>
+				</tr>
+			
+		
+		<tr>
+			<td colspan="4">&nbsp;</td>
+		</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+<!-- signature box -->
+
+	<div style="page-break-before:always;">&nbsp;
+	<table width="600" cellpadding="0" cellspacing="0" border="0">
+
+
+		<tr class="sigRow">
+			<td class="sigBxHdrn" colspan=1 width="125">&nbsp;</td>
+			<td class="sigBxHdr" colspan=3 width="200"><b>Printed Name</b></td>
+			<td class="sigBxHdr" colspan=3 width="200"><b>Signature</b></td>
+			<td class="sigBxHdr" colspan=1 width="75"><b>Date</b></td>
+		</tr>
+		<tr class="sigRow">
+			<td class="sigBxAln" colspan=1 width="125"><b>HP Sales Agent Name:</b></td>
+			<td class="sigBxStmpExtrBtm" colspan=3 width="200">&nbsp;</td>
+			<td class="sigBxStmpExtrBtm" colspan=3 width="200">&nbsp;</td>
+			<td class="sigBxStmpExtrBtm" colspan=1 width="75">&nbsp;</td>
+		</tr>
+		<tr class="sigRow">
+			<td class="sigBxAln" colspan=1 width="125"><b>Customer Name:</b></td>
+			<td class="sigBxStmpExtrBtm" colspan=3 width="200">&nbsp;</td>
+			<td class="sigBxStmpExtrBtm" colspan=3 width="200">&nbsp;</td>
+			<td class="sigBxStmpExtrBtm" colspan=1 width="75">&nbsp;</td>
+		</tr>
+		<tr class="sigRow">
+			<td colspan=1 class="sigBxStmp" width="125"><b>Company Stamp:</td></b>
+			<td colspan=3 width="200">&nbsp;</td>
+			<td colspan=3 width="200">&nbsp;</td>
+			<td colspan=1 class="sigColRt" width="75">&nbsp;</td>
+		</tr>			
+		<tr class="sigRow">
+			<td colspan=1 class="sigBxStmpCl" width="125">&nbsp;</td>
+			<td colspan=3 width="200">&nbsp;</td>
+			<td colspan=3 width="200">&nbsp;</td>
+			<td colspan=1 class="sigColRt" width="75">&nbsp;</td>
+		</tr>
+		<tr class="sigRow">
+			<td colspan=1 class="sigBxStmpCl" width="125">&nbsp;</td>
+			<td colspan=3 width="200">&nbsp;</td>
+			<td colspan=3 width="200">&nbsp;</td>
+			<td colspan=1 class="sigColRt" width="75">&nbsp;</td>
+		</tr>
+		<tr class="sigRow">
+			<td colspan=1 class="sigBxStmpCl" width="125">&nbsp;</td>
+			<td colspan=3 width="200">&nbsp;</td>
+			<td colspan=3 width="200">&nbsp;</td>
+			<td colspan=1 class="sigColRt" width="75">&nbsp;</td>
+		</tr>
+		<tr class="sigRow">
+			<td colspan=1 class="sigBxStmpCl" width="125">&nbsp;</td>
+			<td colspan=3 width="200">&nbsp;</td>
+			<td colspan=3 width="200">&nbsp;</td>
+			<td colspan=1 class="sigColRt" width="75">&nbsp;</td>
+		</tr>
+		<tr class="sigRow">
+			<td colspan=1 class="sigBxStmpBtm" width="125">&nbsp;</td>
+			<td colspan=3 class="sigBxStmpBtm_1" width="200">&nbsp;</td>
+			<td colspan=3 class="sigBxStmpBtm_1" width="200">&nbsp;</td>
+			<td colspan=1 class="sigBxStmpExtrBtm" width="75">&nbsp;</td>
+		</tr>
+
+		</table>		
+		</div>
+
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
